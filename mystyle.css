@@ -219,6 +219,10 @@ h1, h2, p{
     margin-top: 0px;
 }
 
+a{
+    text-decoration:none;
+}
+
 /*
 MEDIA
 */
