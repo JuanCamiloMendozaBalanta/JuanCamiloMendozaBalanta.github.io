@@ -8,36 +8,46 @@ body{
     font-family: "Lato", sans-serif;
     color: var(--dark-gray);
 }
-
 .boxShadow{
     background-color: white;
     -webkit-box-shadow: 1px 1px 13px -4px rgba(0,0,0,0.15);
 }
-.mainSection{
-    display: flex; 
+.card{
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    flex: 1 1 190px;
+    margin: 8px;
+    animation: setcolor 8s infinite;
+}
+.cardTitle{
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+.cardContent{
+    font-size: 1.0rem;
+    margin-bottom: 0px;
+    
+}
+footer{
+    padding: 20px;
+}
+.footerInfo{
+    display: flex;
     flex-wrap: wrap;
-    flex-flow: row;
-    justify-content: space-between;
 }
-.experienceTitle{
-    font-weight: bold;
-    font-size: 1.7rem;
-    padding-top: 7px;
-}
-
 header{
     display: -webkit-flex;
     flex-flow: row-reverse;
     width: -webkit-fill-available;
     justify-content: space-between;
 }
-
 h1{
     margin-top: 0px;
     font-family: "Exo", sans-serif;
     color: var(--dark-yellow);
 }
-
 .icons{
     width: 30px;
     height: auto;
@@ -49,7 +59,12 @@ h1{
     top: 50px;
     left: 24px;
 }
-
+.mainSection{
+    display: flex; 
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+}
 .me{
     display: -webkit-flex;
     flex-flow: column;
@@ -115,13 +130,18 @@ section {
     padding-top: 10px;
 }
 .sectionRightBoxRowContent{
-    padding-left: 20px;
+    padding: 0px 0px 5px 20px;
 }
 .sectionRightBoxRowTitle{
     font-size: 1.2rem;
     font-weight: 500;
     padding-left: 10px;
     margin-bottom: 5px;
+}
+.sectionTitle{
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-top: 7px;
 }
 wrap{
     max-width: 70%;
@@ -131,7 +151,6 @@ wrap{
     display: grid;
     grid-template-rows: auto auto auto;
     min-width: 40%;
-
 }
 .wrapImage{
     width: 50px;
@@ -149,6 +168,11 @@ wrap{
     font-size: 1.0rem;
     font-weight: bold;
 }
+
+@keyframes setcolor {
+    to {border-left: solid 5px green;}
+  }
+
 /*
 RESET
 */
