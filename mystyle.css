@@ -1,7 +1,7 @@
 body{
     background-color:whitesmoke;
     margin: 0px;
-    display: flex;
+    display: -webkit-flex;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -13,7 +13,7 @@ body{
     -webkit-box-shadow: 1px 1px 13px -4px rgba(0,0,0,0.15);
 }
 .card{
-    display: flex;
+    display: -webkit-flex;
     flex-flow: column;
     padding: 10px;
     flex: 1 1 190px;
@@ -28,14 +28,11 @@ body{
 .cardContent{
     font-size: 1.0rem;
     margin-bottom: 0px;
-    
 }
-footer{
-    padding: 20px;
-}
-.footerInfo{
-    display: flex;
+.contactContent, .hobbiesContent{
+    display: -webkit-flex;
     flex-wrap: wrap;
+    padding-left: 20px;
 }
 header{
     display: -webkit-flex;
@@ -48,6 +45,11 @@ h1{
     font-family: "Exo", sans-serif;
     color: var(--dark-yellow);
 }
+.footerSection{
+    display: -webkit-flex;
+    flex-flow: column;
+    padding-bottom: 20px;
+}
 .icons{
     width: 30px;
     height: auto;
@@ -59,16 +61,9 @@ h1{
     top: 50px;
     left: 24px;
 }
-.mainSection{
-    display: flex; 
-    flex-wrap: wrap;
-    flex-flow: row;
-    justify-content: space-between;
-}
 .me{
     display: -webkit-flex;
     flex-flow: column;
-    width: 100%;
     padding: 20px;
     margin-right: 40px;
 }
@@ -76,7 +71,7 @@ h1{
     width: 200px;
 }
 .myDate{
-    display: flex;
+    display: -webkit-flex;
     position: absolute;
     align-items: center;
     left: -25%;
@@ -101,20 +96,26 @@ h1{
     margin-bottom: 0px;
     font-size: 1.1rem;
 }
+.redirectTo{
+    cursor: pointer;
+}
+.redirectTo:hover{
+    background-color: var(--blue);
+}
 section {
     margin: 20px 0px;
     width: 45%;
     padding: 20px 20px 0px 20px;
-    display: flex;
+    display: -webkit-flex;
 }
 .sectionLeft{
-    display: flex;
+    display: -webkit-flex;
     width: 130px;
     min-width: 100px;
     position: relative;
 }
 .sectionRight{
-    display: flex;
+    display: -webkit-flex;
     flex-flow: column; 
     width: 100%;
 }
@@ -143,6 +144,38 @@ section {
     font-size: 1.7rem;
     padding-top: 7px;
 }
+.simpleCard{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    height: 100px;
+    width: 100px;
+    margin: 0px 10px 20px 10px;
+    background-image: linear-gradient(to right, #43cea27a, #18729d6e);
+    border-radius: 30px;
+    padding: 5px;
+}
+.simpleCardImg{
+    width: 40px;
+    height: auto;
+    margin-bottom:5px;
+}
+.simpleCardText{
+    margin: 0px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.skills{
+    padding: 20px;
+}
+.skillsInfo{
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
 wrap{
     max-width: 70%;
     font-size: 1.1rem;
@@ -157,9 +190,14 @@ wrap{
     height: 50px;
     border-radius: 50%;
     background-color: var(--blue);
-    display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
+}
+.wrapSection{
+    display: -webkit-flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .year{
     margin-bottom: 0px;
@@ -192,6 +230,9 @@ MEDIA
 @media screen and (max-width:1200px) {
     .myDate{
         left: -14%;
+    }
+    section{
+        width: -webkit-fill-available;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -236,6 +277,7 @@ MEDIA
 :root {
     --dark-yellow: #F79B13;
     --blue: #073763ff;
+    --blue-opa:rgba(7, 55, 99, 0.5);
     --gray: #4f5d75;
     --dark-gray: #232323;
   }
