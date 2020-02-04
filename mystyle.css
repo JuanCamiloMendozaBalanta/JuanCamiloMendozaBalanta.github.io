@@ -1,0 +1,217 @@
+body{
+    background-color:whitesmoke;
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    color: var(--dark-gray);
+}
+
+.boxShadow{
+    background-color: white;
+    -webkit-box-shadow: 1px 1px 13px -4px rgba(0,0,0,0.15);
+}
+.mainSection{
+    display: flex; 
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.experienceTitle{
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-top: 7px;
+}
+
+header{
+    display: -webkit-flex;
+    flex-flow: row-reverse;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+}
+
+h1{
+    margin-top: 0px;
+    font-family: "Exo", sans-serif;
+    color: var(--dark-yellow);
+}
+
+.icons{
+    width: 30px;
+    height: auto;
+}
+.line{
+    position: absolute;
+    border: solid 1.2px var(--dark-gray);
+    height: 91%;
+    top: 50px;
+    left: 24px;
+}
+
+.me{
+    display: -webkit-flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 20px;
+    margin-right: 40px;
+}
+.myImage{
+    width: 200px;
+}
+.myDate{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: -25%;
+    top: 30px;
+}
+.name{
+    margin-bottom: 5px;
+    font-size: 2.0rem;
+}
+.point{
+    background-color: var(--dark-gray);
+    border-radius: 50%;
+    padding: 7px;
+}
+.profession{
+    font-size: 1.5rem;
+    color:var(--blue);
+    font-weight:500
+}
+.resume{
+    font-weight: lighter;
+    margin-bottom: 0px;
+    font-size: 1.1rem;
+}
+section {
+    margin: 20px 0px;
+    width: 45%;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+}
+.sectionLeft{
+    display: flex;
+    width: 130px;
+    min-width: 100px;
+    position: relative;
+}
+.sectionRight{
+    display: flex;
+    flex-flow: column; 
+    width: 100%;
+}
+.sectionRightBox{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 30px;
+    border-top: solid 1px gray;
+    position: relative;
+    padding-top: 10px;
+}
+.sectionRightBoxRow{
+    padding-top: 10px;
+}
+.sectionRightBoxRowContent{
+    padding-left: 20px;
+}
+.sectionRightBoxRowTitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+wrap{
+    max-width: 70%;
+    font-size: 1.1rem;
+    align-items: center;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    min-width: 40%;
+
+}
+.wrapImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.year{
+    margin-bottom: 0px;
+    padding-left: 10px;
+    font-family: "Exo", sans-serif;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+/*
+RESET
+*/
+
+h1, h2, p{
+    margin-top: 0px;
+}
+
+/*
+MEDIA
+*/
+@media screen and (max-width:1300px) {
+    .myDate{
+        left: -13%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .myDate{
+        left: -14%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .myDate{
+        left: -16.5%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .myDate{
+        left: -21%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .myDate{
+        left: -29%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .myDate{
+        left: -34%;
+    }
+}
+@media screen and (max-width: 600px) {
+    header{
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+    .line{
+        height: 90%;
+    }
+    .me{
+        margin:0px
+    }
+    .myImage{
+        margin-bottom: 20px;
+    }
+    section{
+        width: 100%;
+    }
+  }
+
+:root {
+    --dark-yellow: #F79B13;
+    --blue: #073763ff;
+    --gray: #4f5d75;
+    --dark-gray: #232323;
+  }
