@@ -244,22 +244,7 @@ MEDIA
         left: -16.5%;
     }
 }
-@media screen and (max-width: 800px) {
-    .myDate{
-        left: -21%;
-    }
-}
-@media screen and (max-width: 700px) {
-    .myDate{
-        left: -29%;
-    }
-}
-@media screen and (max-width: 500px) {
-    .myDate{
-        left: -34%;
-    }
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px){
     header{
         flex-flow: column;
         justify-content: flex-end;
@@ -276,7 +261,28 @@ MEDIA
     section{
         width: 100%;
     }
+}
+@media screen and (max-width: 800px) {
+    .myDate{
+        left: -21%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .myDate{
+        left: -29%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .myDate{
+        left: -32%;
+    }
   }
+@media screen and (max-width: 500px) {
+    .myDate{
+        left: -34%;
+    }
+}
+
 
 :root {
     --dark-yellow: #F79B13;
