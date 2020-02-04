@@ -39,6 +39,7 @@ header{
     flex-flow: row-reverse;
     width: -webkit-fill-available;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 h1{
     margin-top: 0px;
@@ -66,6 +67,7 @@ h1{
     flex-flow: column;
     padding: 20px;
     margin-right: 40px;
+    width: 70%;
 }
 .myImage{
     width: 200px;
@@ -253,7 +255,8 @@ MEDIA
         height: 90%;
     }
     .me{
-        margin:0px
+        margin:0px;
+        width: auto;
     }
     .myImage{
         margin-bottom: 20px;
