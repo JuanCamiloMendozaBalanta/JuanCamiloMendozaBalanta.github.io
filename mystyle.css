@@ -70,7 +70,6 @@ h1{
 }
 .myImage{
     width: 200px;
-    max-height: 260px;
 }
 .myDate{
     display: -webkit-flex;
