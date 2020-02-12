@@ -268,9 +268,11 @@ MEDIA
   .me {
     margin: 0px;
     width: auto;
+    height: 265px;
   }
   .myImage {
     margin-bottom: 20px;
+    height: 265px;
   }
   .myDate {
     left: -18.5%;
