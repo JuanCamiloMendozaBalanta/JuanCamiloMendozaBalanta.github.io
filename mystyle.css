@@ -269,6 +269,7 @@ MEDIA
   }
   .myImage {
     margin-bottom: 20px;
+    max-height: 265px;
   }
   .myDate {
     left: -18.5%;
