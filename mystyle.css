@@ -40,7 +40,6 @@ header {
   flex-flow: row-reverse;
   width: -webkit-fill-available;
   justify-content: space-between;
-  max-height: 265px;
 }
 h1 {
   margin-top: 0px;
