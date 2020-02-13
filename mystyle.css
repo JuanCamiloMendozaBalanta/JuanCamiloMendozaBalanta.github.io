@@ -16,7 +16,7 @@ body {
   display: -webkit-flex;
   flex-flow: column;
   padding: 10px;
-  flex: 1 1 190px;
+  flex: 1 1 260px;
   margin: 8px;
   animation: setcolor 8s infinite;
 }
