@@ -55,6 +55,9 @@ h1 {
   width: 30px;
   height: auto;
 }
+.linkToProjects:hover {
+  border-bottom: solid 1px;
+}
 .line {
   position: absolute;
   border: solid 1.2px var(--dark-gray);
@@ -174,6 +177,10 @@ section {
 }
 .skills {
   padding: 20px;
+}
+.studying {
+  padding: 20px;
+  margin-top: 20px;
 }
 .skillsInfo {
   display: -webkit-flex;
