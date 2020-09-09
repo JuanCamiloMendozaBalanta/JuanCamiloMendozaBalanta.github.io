@@ -10,7 +10,9 @@ body {
 }
 .boxShadow {
   background-color: white;
+  box-shadow: 1px 1px 13px -4px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 1px 1px 13px -4px rgba(0, 0, 0, 0.15);
+
 }
 .card {
   display: -webkit-flex;
@@ -34,6 +36,9 @@ body {
   display: -webkit-flex;
   flex-wrap: wrap;
   padding-left: 20px;
+}
+.experience, .education {
+  max-height: 700px;
 }
 header {
   display: -webkit-flex;
@@ -241,6 +246,21 @@ a {
 /*
 MEDIA
 */
+@media screen and (max-width: 2000px) {
+  .myDate {
+    left: -18%;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .myDate {
+    left: -20.5%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .myDate {
+    left: -23.5%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .myDate {
     left: -13%;
@@ -302,6 +322,7 @@ MEDIA
     left: -32%;
   }
 }
+
 @media screen and (max-width: 500px) {
   .myDate {
     left: -41%;
